@@ -18,7 +18,7 @@ RSpec.describe 'Todos API', type: :request do
   end
 
   describe 'GET /todos/:id' do
-    before { get "todods/#{todo_id}" }
+    before { get "/todos/#{todo_id}" }
 
     context 'when the record exists' do
       it 'returns the todo' do
@@ -61,7 +61,7 @@ RSpec.describe 'Todos API', type: :request do
 
     context 'when the request is invalid' do
 
-      before { post '/todods', params: { title: 'Some title' } }
+      before { post '/todos', params: { title: 'Some title' } }
 
       it 'returns status code 422' do
         expect(response).to have_http_status(422)
