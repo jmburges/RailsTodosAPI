@@ -1,24 +1,33 @@
-# README
+# Todos API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fully-fledged API for managing tasks in form of to-do list. 
+Fully tested with RSpec testing framework (as well as other libraries
+such as FactoryBot or Faker)
 
-Things you may want to cover:
+#Installation 
 
-* Ruby version
+Download project and run 
 
-* System dependencies
+```shell
+bundle install
+rails s
+``` 
 
-* Configuration
+#Features
 
-* Database creation
+Todos API provides endpoints to performing CRUD actions on todo items.
+It also provides extended requests authorization using Json Web Token.
 
-* Database initialization
 
-* How to run the test suite
+#Testing
 
-* Services (job queues, cache servers, search engines, etc.)
+To run RSpec tests just type
+```ruby
+rspec
+``` 
+in the main project folder.
 
-* Deployment instructions
+---
 
-* ...
+Project based on Rails API tutorial by Austin Kabiru presented on
+https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
