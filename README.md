@@ -10,6 +10,7 @@ Download project and run
 
 ```shell
 bundle install
+rake db:migrate
 rails s
 ``` 
 
